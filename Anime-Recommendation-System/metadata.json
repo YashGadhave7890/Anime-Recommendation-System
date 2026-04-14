@@ -1,0 +1,6 @@
+{
+  "name": "🎌 Anime Recommender",
+  "description": "A premium anime recommendation engine using TF-IDF and Jikan API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

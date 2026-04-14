@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+  --color-primary: #e50914; /* Netflix Red */
+  --color-secondary: #1f1f1f;
+  --color-accent: #ff0000;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-card: #141414;
+  --color-muted: #262626;
+  --color-muted-foreground: #a3a3a3;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 72.2% 50.6%;
+    --primary-foreground: 0 85.7% 97.3%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 72.2% 50.6%;
+    --radius: 0.75rem;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background: radial-gradient(circle at 50% -20%, rgba(229, 9, 20, 0.15), transparent 70%), #0a0a0a;
+    min-height: 100vh;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/40 backdrop-blur-xl border border-white/5 rounded-2xl overflow-hidden transition-all duration-500 ease-out;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .glass-card:hover {
+    @apply scale-[1.05] border-primary/40;
+    box-shadow: 0 20px 40px -15px rgba(229, 9, 20, 0.3), 0 0 20px rgba(229, 9, 20, 0.1);
+  }
+  
+  .red-glow {
+    text-shadow: 0 0 15px rgba(229, 9, 20, 0.6), 0 0 30px rgba(229, 9, 20, 0.2);
+  }
+
+  .trending-scroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .trending-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .search-container {
+    @apply relative flex flex-wrap items-center gap-2 bg-secondary/40 backdrop-blur-3xl border border-white/10 rounded-2xl p-3 transition-all duration-300;
+  }
+
+  .search-container:focus-within {
+    @apply border-primary/40 bg-secondary/60 ring-4 ring-primary/10;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
