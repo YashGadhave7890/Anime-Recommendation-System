@@ -331,7 +331,7 @@ All metrics reflect actual measured values from the project environment:
 ### 1. Clone & Set Up Backend
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/Anime-Recommendation-System.git
+git clone https://github.com/YashGadhave7890/Anime-Recommendation-System.git
 cd Anime-Recommendation-System
 
 # Create and activate virtual environment
