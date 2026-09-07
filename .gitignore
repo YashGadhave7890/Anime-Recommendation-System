@@ -1,0 +1,101 @@
+# =============================================================================
+# ANIMORA — Production .gitignore
+# =============================================================================
+
+# --- Python & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Frontend (Node & Vite) ---
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Database & Local State ---
+# Never commit local SQLite databases containing personal or session data
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+data/animora.db
+
+# --- Large Raw Datasets (Cached Locally) ---
+# Raw downloads cached locally from Kaggle/web; preserve directory with .gitkeep
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.tar.gz
+data/raw/*.json
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# --- Testing & Code Quality ---
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- Operating Systems & Editors ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# --- Local Scratch Files ---
+general.py
+*.scratch.*

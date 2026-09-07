@@ -1,0 +1,187 @@
+{
+  "dataset_size": {
+    "total_rows": 17495,
+    "total_columns": 30,
+    "memory_usage_mb": 40.41
+  },
+  "missing_values": {
+    "premiered": {
+      "count": 12755,
+      "pct": 72.91
+    },
+    "score": {
+      "count": 5090,
+      "pct": 29.09
+    },
+    "score_norm": {
+      "count": 5090,
+      "pct": 29.09
+    },
+    "ranked": {
+      "count": 1756,
+      "pct": 10.04
+    },
+    "duration": {
+      "count": 542,
+      "pct": 3.1
+    },
+    "episodes": {
+      "count": 508,
+      "pct": 2.9
+    },
+    "aired": {
+      "count": 303,
+      "pct": 1.73
+    },
+    "release_year": {
+      "count": 303,
+      "pct": 1.73
+    }
+  },
+  "ratings": {
+    "raw_score_mean": 6.51,
+    "raw_score_median": 6.52,
+    "raw_score_std": 0.89,
+    "weighted_score_mean": 6.62,
+    "weighted_score_median": 6.51,
+    "weighted_score_std": 0.33
+  },
+  "popularity": {
+    "members_max": 2589552,
+    "members_median": 2084.0,
+    "members_mean": 34786.549985710204,
+    "members_skewness": 8.09,
+    "log_members_skewness": 0.42
+  },
+  "genres": {
+    "Comedy": 6029,
+    "Action": 3887,
+    "Fantasy": 3283,
+    "Adventure": 2957,
+    "Kids": 2663,
+    "Drama": 2619,
+    "Sci-Fi": 2583,
+    "Music": 2244,
+    "Shounen": 2003,
+    "Slice of Life": 1914,
+    "Romance": 1899,
+    "School": 1640,
+    "Supernatural": 1479,
+    "Hentai": 1348,
+    "Historical": 1143,
+    "Mecha": 1101,
+    "Magic": 1079,
+    "Seinen": 830,
+    "Ecchi": 767,
+    "Mystery": 727,
+    "Sports": 713,
+    "Shoujo": 688,
+    "Parody": 660,
+    "Super Power": 632,
+    "Military": 576
+  },
+  "types": {
+    "TV": 4989,
+    "OVA": 3888,
+    "Movie": 2995,
+    "Special": 2218,
+    "ONA": 1900,
+    "Music": 1469,
+    "Unknown": 36
+  },
+  "episodes": {
+    "episodes_median": 2.0,
+    "episodes_mean": 11.55,
+    "episodes_max": 3057,
+    "single_episode_count": 8333,
+    "twelve_episode_count": 1444
+  },
+  "release_years": {
+    "peak_year": 2017,
+    "peak_count": 918,
+    "year_min_analyzed": 1970,
+    "year_max_analyzed": 2022
+  },
+  "correlations": {
+    "score": {
+      "score": 1.0,
+      "weighted_score": 0.74,
+      "members": 0.41,
+      "log_members": 0.7,
+      "favorites": 0.25,
+      "log_favorites": 0.72,
+      "episodes": 0.09,
+      "release_year": 0.25
+    },
+    "weighted_score": {
+      "score": 0.74,
+      "weighted_score": 1.0,
+      "members": 0.68,
+      "log_members": 0.67,
+      "favorites": 0.47,
+      "log_favorites": 0.74,
+      "episodes": 0.07,
+      "release_year": 0.15
+    },
+    "members": {
+      "score": 0.41,
+      "weighted_score": 0.68,
+      "members": 1.0,
+      "log_members": 0.6,
+      "favorites": 0.79,
+      "log_favorites": 0.65,
+      "episodes": 0.07,
+      "release_year": 0.14
+    },
+    "log_members": {
+      "score": 0.7,
+      "weighted_score": 0.67,
+      "members": 0.6,
+      "log_members": 1.0,
+      "favorites": 0.31,
+      "log_favorites": 0.93,
+      "episodes": 0.05,
+      "release_year": 0.33
+    },
+    "favorites": {
+      "score": 0.25,
+      "weighted_score": 0.47,
+      "members": 0.79,
+      "log_members": 0.31,
+      "favorites": 1.0,
+      "log_favorites": 0.38,
+      "episodes": 0.08,
+      "release_year": 0.05
+    },
+    "log_favorites": {
+      "score": 0.72,
+      "weighted_score": 0.74,
+      "members": 0.65,
+      "log_members": 0.93,
+      "favorites": 0.38,
+      "log_favorites": 1.0,
+      "episodes": 0.1,
+      "release_year": 0.27
+    },
+    "episodes": {
+      "score": 0.09,
+      "weighted_score": 0.07,
+      "members": 0.07,
+      "log_members": 0.05,
+      "favorites": 0.08,
+      "log_favorites": 0.1,
+      "episodes": 1.0,
+      "release_year": -0.09
+    },
+    "release_year": {
+      "score": 0.25,
+      "weighted_score": 0.15,
+      "members": 0.14,
+      "log_members": 0.33,
+      "favorites": 0.05,
+      "log_favorites": 0.27,
+      "episodes": -0.09,
+      "release_year": 1.0
+    }
+  }
+}
