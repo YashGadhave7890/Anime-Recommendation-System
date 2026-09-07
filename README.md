@@ -59,7 +59,7 @@ https://github.com/YashGadhave7890/Anime-Recommendation-System
            │ Rocchio  │ │   Disk    │ │          │
            └──────────┘ └───────────┘ └──────────┘
 
-
+```
 
 ## Why ANIMORA?
 
