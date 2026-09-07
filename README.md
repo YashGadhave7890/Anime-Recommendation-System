@@ -3,6 +3,11 @@
 > **Discover what you'll love next.**  
 > A portfolio-grade, full-stack machine learning anime recommendation platform over 17,495 authentic MyAnimeList titles.
 
+<p align="center">
+
+[![🚀 Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-ANIMORA-8B5CF6?style=for-the-badge)](https://animora-seven.vercel.app/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/YashGadhave7890/Anime-Recommendation-System)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-6.1-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev)
@@ -10,42 +15,51 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 [![Tests](https://img.shields.io/badge/Tests-51%20Passed-success?style=flat&logo=pytest&logoColor=white)](tests/)
 
----
-
-## Demo / Screenshots
-
-*Screenshots and UI walkthroughs can be embedded here.*
-
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [ANIMORA UI PREVIEW]                                                                   │
-│                                                                                        │
-│   ANIMORA  [Home] [Discover] [Recommendations] [Watchlist] [Profile]   [Persona: Demo] │
-│                                                                                        │
-│   ┌──────────────────────────────────────────────────────────────────────────────┐     │
-│   │ SPOTLIGHT: Fullmetal Alchemist: Brotherhood (★ 9.19 | TV | Bones)            │     │
-│   │ "Two brothers search for a Philosopher's Stone after a failed transmutation" │     │
-│   │ [▶ View Anime Details]  [+ In Watchlist: Watching]                           │     │
-│   └──────────────────────────────────────────────────────────────────────────────┘     │
-│                                                                                        │
-│   Recommended For You (Rocchio Vector)    Top Rated Masterpieces (Bayesian Quality)    │
-│   ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐     ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐         │
-│   │ FMAB │ │Steins│ │Code G│ │Haikyu│     │CLANNAD│ │Hunter│ │Gintam│ │Cowboy│         │
-│   └──────┘ └──────┘ └──────┘ └──────┘     └──────┘ └──────┘ └──────┘ └──────┘         │
-└────────────────────────────────────────────────────────────────────────────────────────┘
-```
-
-### Deployment Status
-
-**Deployment-ready.**
-
-The repository includes production configuration for:
-- **Render Backend**: Asynchronous FastAPI service with pre-warmed ML models and persistent disk storage for SQLite.
-- **Vercel Frontend**: Optimized React 18 / Vite single-page application with SPA routing rewrites and global CDN distribution.
-
-*A live deployment URL will be added after successful cloud deployment.* Complete step-by-step deployment instructions are provided in [`docs/deployment.md`](docs/deployment.md).
+</p>
 
 ---
+
+## 🚀 Live Demo
+
+### Try ANIMORA Online
+
+**🌐 Live Application:**  
+👉 https://animora-seven.vercel.app/
+
+**⚡ Backend API:**  
+https://animora-api-wl08.onrender.com/
+
+**❤️ API Health Check:**  
+https://animora-api-wl08.onrender.com/health
+
+**📦 GitHub Repository:**  
+https://github.com/YashGadhave7890/Anime-Recommendation-System
+
+### Production Architecture
+
+```text
+                    ┌─────────────────────┐
+                    │   React + Vite SPA  │
+                    │      Vercel         │
+                    └──────────┬──────────┘
+                               │
+                               │ REST API
+                               ▼
+                    ┌─────────────────────┐
+                    │    FastAPI Backend  │
+                    │       Render        │
+                    └──────────┬──────────┘
+                               │
+                  ┌────────────┼────────────┐
+                  │            │            │
+                  ▼            ▼            ▼
+           ┌──────────┐ ┌───────────┐ ┌──────────┐
+           │ ML Engine│ │  SQLite   │ │  CORS    │
+           │ TF-IDF   │ │ Persistent│ │ Security │
+           │ Rocchio  │ │   Disk    │ │          │
+           └──────────┘ └───────────┘ └──────────┘
+
+
 
 ## Why ANIMORA?
 
